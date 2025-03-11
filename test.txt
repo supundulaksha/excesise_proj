@@ -1,0 +1,13 @@
+python app.py   
+ pip install flask
+   pip install opencv-python
+    pip install mediapipe
+      pip install pandas
+        pip install scikit-learn
+        pip install pyttsx3
+
+
+
+
+
+python v3.10

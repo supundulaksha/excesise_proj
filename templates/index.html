@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Exercise Selection</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='/back.jpg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Calibri', sans-serif;
+        }
+
+        .button-container h1{
+            font-size: 75px;
+            font-weight: 100;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 2px #000000;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: #333333;
+            border-radius: 2px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            background-color: #48ce4c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 24px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        h1 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <h1>Intelligent Workout And Physiotherapy Assistent</h1><br>
+        <div class="buttons">
+            <form action="/hip_tutorial" method="get">
+                <button type="submit">Hip Exercise</button>
+            </form>
+            <form action="/hand_tutorial" method="get">
+                <button type="submit">Hand Exercise</button>
+            </form>
+            <form action="/stretching_tutorial" method="get">
+                <button type="submit">Stretching Exercise</button>
+            </form>
+            <form action="/neck_tutorial" method="get">
+                <button type="submit">Neck Exercise</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
