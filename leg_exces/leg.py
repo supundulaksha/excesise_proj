@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 import joblib
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     mp_drawing = mp.solutions.drawing_utils
     mp_pose = mp.solutions.pose
     
